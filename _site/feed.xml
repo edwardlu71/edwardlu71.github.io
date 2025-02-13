@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2025-02-13T05:23:01+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Edward Lu</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">How to build Jekyll Site</title><link href="http://0.0.0.0:4000/jekyll/2024/12/20/how-to-build-jekyll-site.html" rel="alternate" type="text/html" title="How to build Jekyll Site" /><published>2024-12-20T16:38:19+00:00</published><updated>2024-12-20T16:38:19+00:00</updated><id>http://0.0.0.0:4000/jekyll/2024/12/20/how-to-build-jekyll-site</id><content type="html" xml:base="http://0.0.0.0:4000/jekyll/2024/12/20/how-to-build-jekyll-site.html"><![CDATA[<p>After the build of ruby container, run</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
+gem install jekyll
+</code></pre></div></div>
+
+<p>Create a site</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new edwardlu71.github.io
+cd edwardlu71.github.io
+</code></pre></div></div>
+
+<p>Workaround problems</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Gemfile:
+group :jekyll_plugins do
+  gem "sinatra", "&gt;= 3", "&lt; 4"
+  gem "jekyll-admin"
+  gem "jekyll-feed", "~&gt; 0.12"
+end
+
+bundle install
+
+Gemfile:
+group :jekyll_plugins do
+  gem "rackup"
+  gem "jekyll-admin"
+  gem "jekyll-feed", "~&gt; 0.12"
+end
+
+bundle install
+</code></pre></div></div>
+
+<p>Startup of JekyII</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve --host 0.0.0.0 &amp;
+</code></pre></div></div>
+
+<p>Push to <a href="https://github.com/edwardlu71/edwardlu71.github.io">Github</a></p>
+
+<p>It is accessibe from <a href="https://edwardlu71.github.io/">Edward’s doc site</a></p>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[After the build of ruby container, run]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://0.0.0.0:4000/jekyll/update/2024/12/20/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-12-20T05:09:15+00:00</published><updated>2024-12-20T05:09:15+00:00</updated><id>http://0.0.0.0:4000/jekyll/update/2024/12/20/welcome-to-jekyll</id><content type="html" xml:base="http://0.0.0.0:4000/jekyll/update/2024/12/20/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">How to Post Notes to Jekyll Site</title><link href="http://0.0.0.0:4000/jekyll/2024/02/13/how-to-post-notes-to-jekyll-site.html" rel="alternate" type="text/html" title="How to Post Notes to Jekyll Site" /><published>2024-02-13T00:00:00+00:00</published><updated>2024-02-13T00:00:00+00:00</updated><id>http://0.0.0.0:4000/jekyll/2024/02/13/how-to-post-notes-to-jekyll-site</id><content type="html" xml:base="http://0.0.0.0:4000/jekyll/2024/02/13/how-to-post-notes-to-jekyll-site.html"><![CDATA[<p>Create a github token if you don’t have, and enable repo functions</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://github.com/settings/tokens
+</code></pre></div></div>
+
+<p>Bring up Jekyll container, clone github Jekyll project to /srv/jekyll/, remove _posts from .gitignore</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/workshop/jekyll/srv$ git clone https://github.com/edwardlu71/edwardlu71.github.io.git
+</code></pre></div></div>
+
+<p>Bring up Jekyll process in the container</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@53cb163793c3:/srv/jekyll/edwardlu71.github.io# bundle exec jekyll serve --host 0.0.0.0 &amp;
+</code></pre></div></div>
+
+<p>Create a note</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vi _draftes/2025-02-13-how-to-post-notes-to-jekyll-site.markdown
+mv _draftes/2025-02-13-how-to-post-notes-to-jekyll-site.markdown _posts/
+</code></pre></div></div>
+
+<p>At this point, we can see the note from local server.</p>
+
+<p>To post the change to git doc site</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~/workshop/jekyll/srv$ git add .
+~/workshop/jekyll/srv$ git commit -m "posting new notes"
+~/workshop/jekyll/srv$ git push
+
+(with username and token)
+</code></pre></div></div>
+
+<p>Push to <a href="https://github.com/edwardlu71/edwardlu71.github.io">Github</a></p>
+
+<p>It is accessibe from <a href="https://edwardlu71.github.io/">Edward’s doc site</a></p>]]></content><author><name></name></author><category term="jekyll" /><summary type="html"><![CDATA[Create a github token if you don’t have, and enable repo functions]]></summary></entry></feed>
